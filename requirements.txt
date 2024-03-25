@@ -1,2 +1,2 @@
 streamlit
-gradio==3.23
+gradio==4.22.0
