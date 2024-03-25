@@ -1,2 +1,2 @@
 streamlit
-gardio
+gradio==3.23
