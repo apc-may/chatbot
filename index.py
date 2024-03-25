@@ -13,4 +13,4 @@ demo = gr.Interface(fn=greet,      #Webアプリ内で実行する関数
                     inputs="text", #関数への入力値
                     outputs="text")#関数の出力値
 
-demo.launch(share=True)  
+demo.launch()  
