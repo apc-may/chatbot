@@ -5,12 +5,8 @@ import gradio as gr
 #    examples=["./images/cat.jpg", "./images/man.jpg"]).launch()
 
 
-#Webアプリ内で実行する関数を定義
-def greet(name):
-    return "Hello " + name + "!"
+def echo(message, history):
+    return message
 
-demo = gr.Interface(fn=greet,      #Webアプリ内で実行する関数
-                    inputs="text", #関数への入力値
-                    outputs="text")#関数の出力値
-
-demo.launch()  
+demo = gr.ChatInterface(fn=echo, examples=["hello", "hola", "merhaba"], title="Echo Bot")
+demo.launch() 
